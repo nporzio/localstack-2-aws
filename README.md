@@ -12,4 +12,10 @@ Python framework to test AWS infra fully locally + deploy to cloud
 7) `localstack` ( https://docs.localstack.cloud/getting-started/installation/ )
 8) `terraform` ( https://developer.hashicorp.com/terraform/downloads?product_intent=terraform )
 
-# 
+# Goal
+
+The main goal here is to be able to test any combination of AWS services/workflow fully locally via localstack/docker.
+
+The secondary goal ( WIP ) is to build in a way to comfortably and conventionally deploy the tested code and infrastructure to the cloud, be it off local or (preferrably) automated within a gitlab-pipeline.
+
+The mechanics of this repo assume that you're already minimally familiar with AWS's python SDK Boto3, docker, and terraform.
