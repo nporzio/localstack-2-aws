@@ -26,4 +26,7 @@ I will dive into details while I walk you through a simple use-case. After makin
 
 1) Clone this repo into a local directory of your choice.
 2) Regardless of your system python-version, open a terminal and let's use pyenv to configure the latest 3.8.x for this specific shell, just to ensure that we can create a virtual environment with the most up-to-date stack: `cd` into the directory and run `pyenv install -l` (this command should list all the available versions, 3.8.16 at the time of writting)
-3) Install the latest 3.8.16 (based on my tests, it looks like 
+3) Install the latest 3.8.16 `pyenv install 3.8.16` (may take some minutes)
+4) Now let's use this version for the terminal `pyenv shell 3.8.16` and check that it's been indeed set -- `python --version` should return 3.8.16 now
+5) Create a a virtual environment `python -m venv venv` and activate it `source venv/bin/activate`
+6) Install requirements `python -m pip install -r dev-requirements.txt`
